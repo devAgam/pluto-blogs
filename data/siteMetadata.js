@@ -1,26 +1,23 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'Pluto Repo Blogs',
+  author: 'Plutorepo Networks',
+  headerTitle: 'Pluto Repo Blogs',
+  description: 'Updates and blogs from plutorepo.com',
   language: 'en-us',
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://blog.plutorepo.com/',
+  siteRepo: 'https://github.com/devAgam/pluto-blogs',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  image: '/static/images/logo.png',
+  socialBanner: '/static/images/plutoface.png',
+  email: 'plutorepo@gmail.com',
+  github: 'https://github.com/Pluto-Networks',
+  twitter: 'https://twitter.com/plutorepo',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
-    plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
+    plausibleDataDomain: 'blog.plutorepo.com', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
-    googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-X0NDWP7Y0E', // e.g. UA-000000-2 or G-XXXXXXX
   },
   comment: {
     // Select a provider and use the environment variables associated to it

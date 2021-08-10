@@ -1,11 +1,13 @@
+/* eslint-disable @next/next/no-img-element */
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
+import Logo from '@/data/logo.png'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import Image from 'next/image'
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -16,7 +18,11 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label="Tailwind CSS Blog">
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Logo />
+                  <img
+                    src={'/static/favicons/logo.png'}
+                    alt={'logo'}
+                    style={{ height: 'auto', width: '120px', display: 'flex', marginTop: '15px' }}
+                  />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
