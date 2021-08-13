@@ -1,0 +1,189 @@
+---
+title: 'Developer account guide'
+date: '2021-08-13'
+tags: ['developers', 'guide', 'help', 'walkthrough']
+draft: false
+summary: 'A guide on how to use your developer account to the max...'
+---
+
+# New customer frontend
+
+_Title_: Developer account guide
+
+_Author_: Agamjot Singh a.k.a devAgam
+
+_Subject_: blog
+
+_Language_: English
+
+# What is a developer account and what all can you do with it?
+
+Your developer account is your access to all the features and functions we provide at [plutorepo.com](https://plutorepo.com), as of what capabilities it grants are:
+
+<ul>
+  <li>Publish your packages</li>
+  <li>Control public access of your package (restrictions)</li>
+  <li>Manage refund requests (approve, reject, chat)</li>
+  <li>Check package name and identifier availability</li>
+  <li>
+    Access the beta features:
+    <ul>
+      <li>User preferences persistence API</li>
+    </ul>
+  </li>
+  <li>Generate PROD and TEST API keys to access the DRM API</li>
+</ul>
+
+# How can you get one?
+
+So at this point we assume you are interested in working with us, to enrol as a developers follow these steps:
+
+<ol>
+  <li>Create an account with us at [plutorepo.com](https://plutorepo.com).</li>
+  <li>
+    Go into your [profile](https://plutorepo.com/profile) and save your uid. (we will ask for this
+    later)
+  </li>
+  <li>
+    At this point you can either fill this
+    [form](https://docs.google.com/forms/d/e/1FAIpQLScg4ssLxwNcHlYqLPbY5SYDLYkypCvt4KYSwgO5-zGcIRln1A/viewform)
+    or contact us on twitter [@plutorepo](https://twitter.com/PlutoRepo) and we will get back to you
+    in 2 business days.
+  </li>
+</ol>
+
+# How to use your developer account
+
+Welcome to [plutorepo.com](https://plutorepo.com), so to use your plutorepo developer account you need to head to [developer.plutorepo.com](https://developer.plutorepo.com).<br/><br/>
+
+### Signing in
+
+You will be greeted by a sign in screen as to maintain your security we use a stricter auth process for developer panel.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628827282/sign-in-developer-page.png)
+Here you should sign in with the same account that you got the developer access approved for.
+
+## Tabs
+
+### View Analytics
+
+Moving forward you should see this page ![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628827559/general-over-view-dev-panel.png)
+Here you would be able to see unique views for your package since the past 14 days
+
+### Sales Analytics
+
+In this tab you can see all your sales, refunds, and rejected transactions for the past 24 hours.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628827766/sale-analytics-devs.png)
+The reason to include these details is to allow for transparency and possibly studying patterns and fraudulent anomalies.
+
+### Packages
+
+Over here you can see your submissions and control the packages.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628829334/package-info-dev-panel_j3mf9r.png)
+Description and controls:
+
+<ul>
+  <li>Name: your package name.</li>
+  <li>Type: type of your package.</li>
+  <li>
+    Status: current status of your package, (pending -> approved -> update pending -> update
+    rejected | rejected).
+  </li>
+  <li>
+    Actions: control your packages:
+    <ul>
+      <li>Update: update your package to a new 'build' / 'version'.</li>
+      <li>Edit: edit your package description.</li>
+      <li>Restrict: hide your package from the public.</li>
+    </ul>
+  </li>
+</ul>
+
+## API
+
+### API Keys
+
+Here you can control your api keys.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628829741/api-tab-dev-panel_ieiwvj.png)
+Actions and controls:
+
+<ul>
+  <li>Generate New Key: Generate new api access keys.</li>
+  <li>
+    Test (checkbox): Sets your API key to test mode, implying your key would work only from one ip
+    address (can be modified) and will only give a particular type of response, positive or negative
+    (set by you).
+  </li>
+</ul>
+
+#### Keys
+
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628830089/Key-depictions-dev-panel.png)
+
+Here you can see that the 1st key is a test key you can modify its access, status, and response aspects.
+
+The second key is a production key it can be accessed from everywhere i.e client side and can be disabled/enabled in case you want to disable previous versions of your package, while its not advised to use different keys for different package versions it is an option.
+
+### User preferences persistence
+
+In this tab you can create your package preference schema, sort of like MongoDB Schemas.
+
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628831798/Package-schema-page_baxcj6.png)
+
+You have 3 main data types:
+
+{' '}
+
+<ul>
+  <li>String</li>
+  <li>Number</li>
+  <li>Boolean</li>
+</ul>
+We also visualize the json structure to provide you with a better understanding.
+
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628832086/new-package-schema_gpbnn0.png)
+
+More comprehensive explanation for the api and its usage is available in the 'Pref docs' tab.
+
+### The purchases verification API
+
+Here you can read the documentation about the purchases verification api.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628832289/standard-api_vcjfwh.png)
+This is to be used with the same api key as generated in the 'API Keys' tab. Better documentation is available in the tab itself, we will soon have example code in ObjC up as well.
+
+### Generate Gifts
+
+Over here you can generate gift codes of the packages you own.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628832598/gift-code-gen_qfrcq9.png)
+By default its 5 gift codes per day, these are subjected to change over time and on request.
+
+### Submitting packages
+
+In this tab you can submit your package(s).
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628832850/submit-package_bcwdyl.png)
+
+Openly admitting the UI is not that great but we are working on a rewrite
+
+### Tests
+
+In this tab you can access our different databases and apis to test your plans.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628833072/pacakge-identifier_fmcw9h.png)
+Further testing features are in development.
+
+### History
+
+Over here you can see your refunds history.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628833138/history_id8bhr.png)
+
+### Payouts
+
+In this tab you can see your previous payouts details.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628833334/payouts-histroy_ubckq4.png)
+
+### Contact Settings
+
+In here you can set and change your contacts for us and the public.
+![GitHub Logo](https://res.cloudinary.com/plutorepo-com/image/upload/v1628833497/contact-settings_khgizs.png)
+
+This guide is written for the v1 UI for the initial release of [plutorepo.com](https://plutorepo.com), the v2 version for the developer UI is also on the way with better performance and UX. For anymore queries and confusion feel free to DM us on twitter [@plutorepo](https://twitter.com/PlutoRepo).
+
+Glad to have you.
